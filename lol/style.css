@@ -22,6 +22,7 @@
   font-family: NanumGothic;
   list-style: none;
   color: var(--white-color);
+  border-collapse: collapse;
 }
 button {
   border: none;
@@ -73,11 +74,6 @@ button {
 }
 .main .main-img {
   width: 100vw;
-  /* position: relative; */
-  background-size: contain;
-}
-.main .main-img:nth-child(1) {
-  background-image: url(/image/irelia_splash_7.jpg);
 }
 .main .main-img img {
   display: block;
@@ -86,7 +82,7 @@ button {
 .main .main-img:first-child .main-container {
   position: absolute;
   right: 10%;
-  top: 25%;
+  top: 40%;
 }
 .main .main-img:first-child .main-container .main-box {
   border: 2px var(--white-color) solid;
@@ -114,29 +110,131 @@ button {
   padding: 80px 80px;
 }
 .notice .card {
-  width: 22%;
+  width: 24%;
   background: var(--black-color);
   padding: 8px;
 }
 .notice .card:nth-child(1) .card-image {
-  background-image: url(/image/fizz_splash_12.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/image/fizz_splash_12.jpg);
 }
 .notice .card:nth-child(2) .card-image {
-  background-image: url(/image/thresh_splash_8.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/image/thresh_splash_8.jpg);
 }
 .notice .card:nth-child(3) .card-image {
-  background-image: url(/image/fiora_Splash_11.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/image/fiora_Splash_11.jpg);
 }
 .notice .card:nth-child(4) .card-image {
-  background-image: url(/image/irelia_splash_9.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/image/irelia_splash_9.jpg);
 }
 .notice .card .card-image {
-  backdrop-filter: blur;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 40px;
+  padding: 30px;
 }
 .notice .card .card-image p {
   font-size: var(--vlare-fontsize);
   font-weight: 800;
+}
+.notice .card .card-image button {
+  width: 86px;
+  height: 32px;
+  background-color: var(--gray-color);
+  color: var(--black-color);
+  border-radius: 4px;
+  padding: 4px;
+}
+.icons {
+  background: var(--background-color);
+  margin: 0;
+  position: relative;
+  top: -16px;
+  padding: 100px;
+}
+.icons > p {
+  font-size: var(--title-fontsize);
+  font-weight: 900;
+  text-align: center;
+}
+.icons .icon {
+  width: 50%;
+  padding: 32px;
+}
+.icons .icon .icon-box {
+  float: left;
+  height: 64px;
+  width: 64px;
+  background: yellow;
+  border-radius: 4px;
+  margin: 32px;
+}
+.icons .icon .icon-box i {
+  color: black;
+  font-size: 48px;
+  position: relative;
+  top: 8px;
+}
+.icons .icon .icon-text {
+  margin-left: 16px;
+}
+.icons .icon .icon-text p:first-child {
+  font-weight: 800;
+  font-size: var(--vlare-fontsize);
+  margin: 0;
+  margin-top: 16px;
+}
+.icons .icon .icon-text p:last-child {
+  font-size: 14px;
+}
+.icons .icon {
+  float: left;
+}
+.FAQ {
+  background: var(--background-color);
+  position: relative;
+  bottom: 16px;
+}
+.FAQ > p {
+  font-size: var(--title-fontsize);
+  font-weight: 800;
+  text-align: center;
+}
+.FAQ .FAQ-container {
+  padding: 48px 64px;
+}
+.FAQ .FAQ-container .FAQ-item {
+  padding: 8px 16px;
+  background: #121212;
+  box-shadow: 2px 0 0 0 #ffffff, 0 2px 0 0 #ffffff, 2px 2px 0 0 #ffffff,
+    2px 0 0 0 #ffffff inset, 0 2px 0 0 #ffffff inset;
+}
+.FAQ .FAQ-container .FAQ-item p {
+  display: inline-block;
+  margin: 0;
+}
+.footer {
+  background: #0a0a0a;
+  padding: 64px 64px 0 64px;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+}
+.footer .footer-container .footer-item > p {
+  font-size: var(--large-fontsize);
+  font-weight: 800;
+}
+.lastfooter {
+  padding: 8px;
+}
+.lastfooter > span:first-child {
+  font-size: 32px;
+  margin-right: 16px;
+}
+.lastfooter > span:last-child {
+  font-size: 12px;
 }
